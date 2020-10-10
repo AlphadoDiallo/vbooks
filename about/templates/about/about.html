@@ -1,0 +1,35 @@
+{% extends 'vegasbook/base.html' %}
+
+{% load static %}
+
+{% block title %} | Thursday {% endblock %}
+
+{% block content %}
+</br>
+<table class="table table-hover table-bordered table-dark">
+<button type="button" class="btn btn-primary btn-lg btn-block">Thursday Night NFL Spread</button>
+  <thead>
+    <tr>
+      <th scope="col">Date & Time</th>
+      <th scope="col">Favorite</th>
+      <th scope="col">Spread</th>
+      <th scope="col">Underdog</th>
+      <th scope="col">Total</th>
+    </tr>
+  </thead>
+  {% for project in projects %}
+  <tbody>
+    <tr>
+      <th scope="row">{{ project.list_data }}</th>
+      <td>{{ project.favorite }}</td>
+      <td>{{ project.spread }}</td>
+      <td>{{ project.underdog }}</td>
+      <td>{{ project.list_total }}</td>
+    </tr>
+  </tbody>
+  {% endfor %}
+</table>
+
+
+
+{% endblock %}

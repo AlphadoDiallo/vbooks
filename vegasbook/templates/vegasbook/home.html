@@ -1,0 +1,30 @@
+{% extends 'vegasbook/base.html' %}
+
+{% load static %}
+
+{% block title %} | Thursday {% endblock %}
+
+{% block content %}
+<div class="row justify-content-center my-3">
+  <div class="col-5">
+    <img src="{% static 'vegasbook/images/nfl_logo_football_field.jpg' %}" style="width: 100%;" class="img-fluid" alt="Responsive image">
+  </div>
+</div>
+</br>
+<span class="badge badge-pill badge-success">NFL Spread</span>
+
+<table class="table table-hover table-dark">
+<div class="list-group">
+  <a href="{% url 'about' %}" class="list-group-item list-group-item-action list-group-item-primary">Thursday Night Football</a>
+  <a href="{% url 'sfootballs' %}" class="list-group-item list-group-item-action list-group-item-secondary">Sunday Night Football</a>
+  <a href="{% url 'mfootballs' %}" class="list-group-item list-group-item-action list-group-item-success">Monday Night Football</a>
+  <a href="{% url 'cfootballs' %}" class="list-group-item list-group-item-action list-group-item-warning">College Night Football</a>
+</div>
+</table>
+
+{% endblock %}
+
+
+
+
+
