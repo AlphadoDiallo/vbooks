@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'p5w=i3^gd-q8ad&8m*3a%agwfnbijl6=h#n@*!ojqwkts1$i6q'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['alphado.pythonanywhere.com']
 
 
 # Application definition
