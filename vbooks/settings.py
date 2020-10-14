@@ -25,7 +25,7 @@ SECRET_KEY = 'p5w=i3^gd-q8ad&8m*3a%agwfnbijl6=h#n@*!ojqwkts1$i6q'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['www.vegas-book.com ']
+ALLOWED_HOSTS = ['alphado.pythonanywhere.com ']
 
 
 # Application definition
