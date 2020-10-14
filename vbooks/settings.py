@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'p5w=i3^gd-q8ad&8m*3a%agwfnbijl6=h#n@*!ojqwkts1$i6q'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['alphado.pythonanywhere.com ']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -127,8 +127,3 @@ STATIC_ROOT = BASE_DIR / 'static'
 
 MEDIA_ROOT = BASE_DIR / 'media'
 MEDIA_URL = '/media/'
-
-try:
-    from .local_settings import *
-except ImportError:
-    print("Looks like no local file. You must be on weed! ")
