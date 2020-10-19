@@ -12,20 +12,17 @@
 
   </head>
   <body>
-<!-- Image and text -->
-<div class="container">
-  <nav class="navbar navbar-light bg-light">
+
+<div class="container" class="shadow-none p-3 mb-5 bg-light rounded">
+  <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
   <a class="navbar-brand" href="{% url 'home' %}">
-    <img src="{% static 'vegasbook/images/logos.png' %}" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
-    Vegas-book
+    <button type="button" class="btn btn-primary">
+  Vegas <span class="badge badge-light">-book</span> </button>
   </a>
 </nav>
 </div>
 
-
-
-
-
+</br>
 
     {% block content %}
     {% endblock %}

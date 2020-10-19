@@ -10,21 +10,23 @@
 <button type="button" class="btn btn-primary btn-lg btn-block">College Night NFL Spread</button>
   <thead>
     <tr>
-      <th scope="col">Date & Time</th>
-      <th scope="col">Favorite</th>
-      <th scope="col">Spread</th>
-      <th scope="col">Underdog</th>
-      <th scope="col">Total</th>
+      <th scope="col" class="text-info">Favorite</th>
+      <th scope="col" class="text-info">Underdog</th>
+      <th scope="col" class="text-info">Spread</th>
+      <th scope="col" class="text-primary">Date & Time</th>
+      <th scope="col" class="text-info">Total</th>
+      <th scope="col" class="text-info">Wine</th>
     </tr>
   </thead>
   {% for college in colleges %}
   <tbody>
     <tr>
-      <th scope="row">{{ college.list_data }}</th>
-      <td>{{ college.favorite }}</td>
-      <td>{{ college.spread }}</td>
+      <th scope="row">{{ college.favorite }}</th>
       <td>{{ college.underdog }}</td>
+      <td>{{ college.spread }}</td>
+      <td class="text-primary">{{ college.list_data }}</td>
       <td>{{ college.list_total }}</td>
+      <td>{{ college.win }}</td>
     </tr>
   </tbody>
   {% endfor %}

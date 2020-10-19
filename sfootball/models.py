@@ -7,8 +7,9 @@ class Sunday(models.Model):
     spread = models.CharField(max_length=100)
     underdog = models.CharField(max_length=100)
     list_total = models.CharField(max_length=100)
+    win = models.CharField(max_length=100)
     is_published = models.BooleanField(default=True)
-    list_data = models.DateTimeField(default=datetime.now, blank=True)
+    list_data = models.CharField(max_length=100)
 
     def __str__(self):
         return self.favorite

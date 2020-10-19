@@ -7,24 +7,26 @@
 {% block content %}
 </br>
 <table class="table table-hover table-bordered table-dark">
-<button type="button" class="btn btn-primary btn-lg btn-block">Monday Night NFL Spread</button>
+  <span class="badge badge-pill badge-success">Monday Night NFL Spread</span>
   <thead>
     <tr>
-      <th scope="col">Date & Time</th>
-      <th scope="col">Favorite</th>
-      <th scope="col">Spread</th>
-      <th scope="col">Underdog</th>
-      <th scope="col">Total</th>
+      <th scope="col" class="text-info">Favorite</th>
+      <th scope="col" class="text-info">Underdog</th>
+      <th scope="col" class="text-info">Spread</th>
+      <th scope="col" class="text-primary">Date & Time</th>
+      <th scope="col" class="text-info">Total</th>
+      <th scope="col" class="text-info">Wine</th>
     </tr>
   </thead>
   {% for monday in mondays %}
   <tbody>
     <tr>
-      <th scope="row">{{ monday.list_data }}</th>
-      <td>{{ monday.favorite }}</td>
-      <td>{{ monday.spread }}</td>
+      <th scope="row">{{ monday.favorite }}</th>
       <td>{{ monday.underdog }}</td>
+      <td>{{ monday.spread }}</td>
+      <td class="text-primary">{{ monday.list_data }}</td>
       <td>{{ monday.list_total }}</td>
+      <td>{{ monday.win }}</td>
     </tr>
   </tbody>
   {% endfor %}
